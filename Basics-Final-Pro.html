@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Over Body</title>
+    <style>
+       body {
+            background-color: rgb(237, 243, 245);
+        }
+        .container{
+            max-width: 1000px;
+            margin: 0 auto; 
+            padding: 30px 00px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(3, 8, 48);
+            padding-top: 25px;
+            font-size:xxx-large;
+            font-variant-caps: all-petite-caps;
+            font-family:Garamond, serif;
+            transition: 2s;
+        }
+        h1:hover{
+            width: 100%;
+            background: rgb(93, 184, 219);
+            border-radius: 10px;
+        }
+        h2{
+            text-align: center;
+            font-variant-caps: all-petite-caps;
+            color:rgb(223, 136, 133);
+            font-size:xx-large;
+            font-family:Garamond, serif;
+            transition: 2s;
+        }
+        h2:hover{
+            width: 100%;
+            background: rgb(93, 184, 219);
+            font-size: 35px;
+            color: aliceblue;
+            border-radius: 10px;
+        }
+        h3{
+            text-align: center;
+            font-variant-caps: all-petite-caps;
+            color:rgb(3, 8, 48);
+            font-size: x-large;
+            font-variant-caps: all-petite-caps;
+            font-family: Garamond, serif;
+            border-style:solid;
+            border-radius: 10px;
+            transition: 2s;  
+        }
+        h3:hover{
+            width: 100%;
+            background: rgb(93, 184, 219);
+            font-size: 30px;
+        }
+        img{
+            display:block;
+            border-radius: 10px;
+            margin: auto;
+            max-width: 100%;
+        }
+        p{
+            text-align:center;
+            padding-top:20px;
+            padding-left:10px;
+            padding-right:10px;
+            color: rgb(3, 8, 48);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 450;
+            margin-top:25px;
+            margin-bottom:25px;
+            line-height: 3;
+        }  
+        .pointer{
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        a{
+            display: block;
+            color:  rgb(128, 82, 236);
+            text-decoration: none;
+            text-align: center;
+            padding-bottom: 25px;
+            font-family:Garamond, serif;
+            font-size: 25px;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: rgba(243, 193, 174, 0.801);
+        }
+        button{
+            color:rgba(243, 193, 174, 0.801);
+            background-color:rgb(3, 8, 48);
+            border-radius: 12px;
+            padding: 10px 25px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 10px 10px 5px rgba(243, 193, 174, 0.801);
+
+        }
+        button:hover {
+           color: rgba(238, 88, 28, 0.801);
+           
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Mind Over Body</h1>
+
+        <h2>Change your reaity with a singe thought!</h2>
+
+        <img src="https://mvhospital.org/wp-content/uploads/2020/08/Health-and-Wellness-Blog.jpg"
+        alt="Calm lady" 
+        width="700">
+
+        <h3>Conscious thoughts, repeated often enough, become unconscious thinking.</h3>
+        <p> Your thoughts and feelings come from your past memories.If you think and feel a certain way, you begin to create an attitude. An attitude is a cycle of short-term thoughts and feelings experienced over and over again. Attitudes are shortened states of being. If you string a series of attitudes together, you create a belief. Beliefs are more elongated states of being and tend to become subconscious. When you add beliefs together, you create a perception. Your perceptions have everything to do with the choices you make, the behaviors you exhibit, the relationships you chose, and the realities you create.The latest research supports the notion that we have a natural ability to change the brain and body by thought alone, so that it looks biologically like some future event has already happened. Because you can make thought more real than anything else, you can change who you are from brain cell to gene, given the right understanding. <br> <span style="color: rgb(128, 82, 236);"> <em> <strong> Your thoughts are incredibly powerful. Choose yours wisely.</strong> </em></p>
+        
+        <a href="https://www.mindvalley.com/">Mindvalley</a>
+        
+        <div  class="pointer">
+            <button>Start Now</button>
+            <br>
+            <br>
+            <br>
+            <hr> 
+        </div>
+        <script>
+             function start(){
+
+                let name= prompt("Welcome! What is your name?");
+                alert ("Welcome, "+ name +"!");
+                
+                let question = prompt ("Are you ready for your Mind to rule your world? Please answer Yes or No!");
+
+                if (question === "yes"){
+                   alert("Wonderfull, " + name + " , please follow the link to Mindvalley where you can take classes.");
+                } else{
+                    alert("We are sorry to see you go " + name + ". We hope you will think about it and return soon.")
+                }
+            }
+
+            let startNow = document.querySelector(".pointer");
+            startNow.addEventListener("click", start);
+        </script> 
+
+
+    </div>
+</body>
+</html>
